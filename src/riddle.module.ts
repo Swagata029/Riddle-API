@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './riddle.controller';
+import { RiddleController } from './riddle.controller';
 
 @Module({
   imports: [],
-  controllers: [AppController],
+  controllers: [RiddleController],
 })
 export class AppModule {}

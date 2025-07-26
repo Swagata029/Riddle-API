@@ -1,7 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 
 @Controller()
-export class AppController {
+export class RiddleController {
   private riddles = [
     {
       riddle: 'What goes up but never comes down?',
