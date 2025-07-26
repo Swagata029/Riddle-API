@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: riddles-api
+    env: node
+    region: singapore
+    plan: free
+    branch: master
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: node dist/main
+    rootDir: .
+    envVars:
+      - key: PORT
+        value: 3000
